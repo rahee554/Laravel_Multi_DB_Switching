@@ -8,13 +8,12 @@ class DatabaseServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        // Publish config and files
         $this->publishes([
-            __DIR__.'/../storage' => storage_path(),
-        ], 'laravel-dynamic-db');
-
-        // Add middleware to kernel
-        app('router')->aliasMiddleware('database.switch', DatabaseMiddleware::class);
+            __DIR__.'/Http/Controllers/Database' => app_path('Http/Controllers/Database'),
+            __DIR__.'/Middleware' => app_path('Http/Middleware'),
+            __DIR__.'/views' => resource_path('views/vendor/database-config'),
+            __DIR__.'/storage' => storage_path(),
+        ], 'laravel-database-config');
     }
 
     public function register()
