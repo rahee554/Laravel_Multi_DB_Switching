@@ -1,0 +1,16 @@
+{
+    "database_prefix": "#",
+    "root": { "username": "root", "password": "", "host": "127.0.0.1" },
+    "hosts": {
+        "www.domain1.com": {
+            "database": "db_name",
+            "username": "db_username",
+            "password": "db_password"
+        },
+        "www.domain2.com": {
+            "database": "db_name",
+            "username": "db_username",
+            "password": "db_password"
+        }
+    }
+}
