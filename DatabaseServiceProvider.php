@@ -1,6 +1,6 @@
 <?php
 
-namespace ArtflowStudio\LaravelDynamicDb;
+namespace AFDynamicDb;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ArtflowStudio\\LaravelDynamicDb\\": "src/"
+            "AFDynamicDb\\": "src/"
         }
     },
     "scripts": {
@@ -24,7 +24,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "ArtflowStudio\\LaravelDynamicDb\\DatabaseServiceProvider"
+                "AFDynamicDb\\DatabaseServiceProvider"
             ]
         }
     },
